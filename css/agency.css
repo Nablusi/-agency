@@ -1,0 +1,484 @@
+/* global value starts*/
+body{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+:root{
+    --textHoverColor:#2AAEC6;
+    --backgroundColorHover:#ffffff;
+    --textColor:#ffffff;
+    --hoverHeaderBackGround:#DBE413;
+}
+
+@media (max-width:767px){
+    iframe{
+        width:340px !important;
+    }
+    .footer .container .calling-us{
+        margin-top:50px;
+    }
+    .contant-us .container .contacts input{
+        margin-bottom: 30px!important;
+        width:100% !important;
+    }
+    .contant-us .container .contacts{
+        align-items: center !important;
+    }
+    .contant-us .container .contacts .inputs{
+        width:100% !important;
+    }
+    .counting-up-cliants .background-two{
+        padding-bottom: 140px;
+    }
+    .counting-up-cliants .background-two .card{
+        margin-top: 40px
+    }
+    .projects .container-fluid .img-container .img-projects .button-img{
+        max-width:100%;
+        height:100%;
+        right: 4px !important;
+        top:15px !important;
+    }
+
+}
+
+@media (max-width:576px){
+    .projects .container-fluid .img-container .img-projects .button-img{
+        max-width:94%;
+        height:100%;
+        right: 23px !important;
+        top:5px !important;
+    }
+    .background .carousel .carousel-inner .carousel-item h2{
+        font-size: 20px !important;
+        
+    }
+
+}
+@media (max-width:991px){
+    .background .carousel{
+        transform: translate(0px, 318px)!important;
+    }
+    .email-invaled{
+        top:47px;
+    }
+    .username-invalied{
+        bottom:-20px;
+    }
+}
+
+
+
+/* global value ends*/
+
+/* nav starts */
+    .background{
+        background-image:url("/img/bg.jpg");
+        position: relative;
+        background-size: cover;
+        z-index: 0;
+        min-height: 100vh;
+        background-position: center;
+    }
+    .background::after{
+        content:"";
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background-image:linear-gradient(to right, #42a09882, #b9c4548c) ;
+        z-index: -1;
+        top: 0;
+    }
+    .background nav{
+        margin-bottom: 150px;
+    }
+    nav.navbar.active
+    {
+        background-color:#fff;
+        border:1px solid #eee;
+    }
+    nav.navbar.active .container .navbar-nav .nav-item .nav-link{
+        color:var(--textHoverColor);
+    }
+    nav.navbar.active .container .navbar-nav .nav-item .nav-link.active{
+        background-color: var(--textHoverColor);
+        color:#dae413;
+    }
+
+    nav.navbar.active .container .navbar-nav .nav-item a:hover{
+        color:#dae413;
+        background-color: #16aeca;
+    }
+    nav.navbar.active .container .navbar-toggler{
+        color: #16aeca;
+    }
+
+
+    nav .container .navbar-nav .nav-item a{
+        color:var(--textColor);
+        padding-right: 25px;
+        padding-left: 25px;    
+        text-align: center;
+    }
+    .navbar-toggler{
+        color:var(--textHoverColor);
+    }
+    nav .container .navbar-nav .nav-item a:hover{
+        color:var(--textHoverColor);
+        background-color: var(--backgroundColorHover);
+    }
+    .background .carousel{
+        transform: translate(0px, 228px);
+    }
+    
+    .background .carousel .carousel-inner .carousel-item h2{
+        padding-bottom: 50px;
+        color:var(--textColor);
+        font-size: 40px;
+        
+    }
+    .background .carousel .carousel-inner .carousel-item{
+        left: -18%;
+        width: 63%;
+        text-align: center;
+       
+    }
+
+    .background .carousel .carousel-inner .carousel-item a{
+        background-color: var(--textHoverColor);
+        color:var(--textColor);
+        padding-left:55px;
+        padding-right:55px;
+        transition: 0.5s ease;
+        margin-bottom: 190px;
+
+}
+    .background .carousel .carousel-inner .carousel-item a:hover{
+        background-color: var(--hoverHeaderBackGround);
+        color:#69915E;
+    }
+
+/* nav ends */
+/* services starts */
+.services{
+    background-color: #ffffff;
+}
+.services .container h2{
+    padding-top:80px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.services .container .card-container{
+    gap:30px;
+}
+
+.services .container .card-container .card{
+    height: 320px;
+    transition: 0.3s ease;
+}
+.services .container .card-container .card-active{
+    height: 426px;
+}
+.services .container .card-container .card img{
+    margin-top:50px;
+}
+
+.services .container .card-container .card .card-header{
+    background-color: transparent;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.services .container .card-container .card .card-text{
+    margin-bottom: 56px;
+}
+.services .container .card-container .card .text-on-click{
+    display: none;
+}
+.services .container .card-container .card .text-on-click.active{
+    display: block;
+}
+
+
+/* services ends */
+/* projects starts */
+.projects{
+    background-color: #ffffff;
+}
+.projects .container-fluid h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom:60px;
+    margin-top:80px;
+}
+.projects .container-fluid .img-container .img-projects .button-img{
+    width:100%;
+    height:100%;
+    right: 24px;
+
+    
+}
+
+.projects .container-fluid .img-container .img-projects .background-img{
+    position: absolute;
+    top:15px;
+    left: 38px;
+    width:90%;
+    height:90%;
+    background-color: #2aaec6bd;
+    color:white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.black-bage{
+    width: 100%;
+    background-color: #000000a3;
+    height: 100%;
+    position: fixed;
+    transition: 0.3s ease;
+    top: -250%;
+    z-index: 50;
+}
+
+.black-bage .close-button{
+    color:var(--textHoverColor);
+    font-size: 40px;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+}
+
+.black-bage .card{
+    background-color: transparent;
+    top:25%;
+}
+.black-bage .card .card-body h5{
+    color:var(--textColor);
+    margin-bottom: 16px;
+}
+.black-bage .card .card-body p{
+    color:var(--textColor);
+}
+
+.black-bage .card .card-body button{
+    background-color: var(--textHoverColor);
+    color:var(--textColor);
+    width: 140px;
+    margin-bottom:50px;
+}
+
+
+.black-bage:hover{
+    overflow-y: scroll;
+}
+.black-bage::-webkit-scrollbar{
+    background-color: rgb(179, 179, 179);;
+    width: 8px;
+}
+.black-bage::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+    width: 8px;
+}
+
+
+.projects .container-fluid .img-container .img-projects .background-img.active{
+    display: flex;
+}
+
+/* .projects .container-fluid .img-container .img-projects .black-bage:target{
+    top: 0;
+} */
+
+
+
+
+
+
+
+
+/* project ends */
+
+/* clients starts */
+.counting-up-cliants .background-two{
+    background-image: url("/img/bg-2.jpg");
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.counting-up-cliants .background-two::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #2aaec68f;
+    z-index: -1;
+    top: 0;
+}
+.counting-up-cliants .background-two .container{
+    padding-top: 140px;
+}
+
+.counting-up-cliants .background-two .container .card{
+    background-color: transparent;
+}
+/* .counting-up-cliants .background-two .container .card img{
+    
+} */
+.counting-up-cliants .background-two .container .card h2,
+.counting-up-cliants .background-two .container .card p{
+    margin-top:30px;
+    color:var(--textColor);
+}
+
+/* clients  ends*/
+
+/* contantus starts */
+.contant-us .container{
+    padding-top:90px;
+
+}
+
+.contant-us .container .card .card-body h5{
+    background-color: transparent;
+    font-size: 24px;
+    padding-right: 25px;
+    border:none;
+    margin-bottom: 35px;
+}
+.contant-us .container .card .card-body p{
+    color:var(--textHoverColor);
+    font-size: 18px;
+    padding-right: 25px;
+}
+
+.contant-us .container .contacts{
+    margin-top:65px;
+}
+.contant-us .container .contacts h2{
+    font-size:24px;
+    margin-bottom: 24px;
+}
+.contant-us .container .contacts button{
+    background-color: var(--textHoverColor);
+    color:var(--textColor);
+    height: 50px;
+    width:100px;
+    margin-bottom: 60px;
+}
+.contant-us .container .contacts textarea{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #F7F7F7;
+    border: 1px solid #ECECEC;
+    width: 100%;
+    padding-right:15px;
+}
+.contant-us .container .contacts input{
+    background-color: #F7F7F7;
+    border: 1px solid #ECECEC;
+    width: 270px;
+    height: 45px;
+    padding-right:15px;
+}
+.contant-us .container .contacts .inputs{
+    gap: 30px;
+}
+
+/* contantus ends */
+/* footer starts */
+.footer{
+    background-color: #171717;
+    
+}
+.footer .container{
+    padding-top:75px;
+    gap:20px;
+}
+.footer .container .calling-us{
+    padding-bottom: 80px;
+}
+.footer .container .calling-us .card,
+.footer .container .about-company .card{
+    background-color: transparent;
+    border:none;
+}
+.footer .container .about-company .card h5,
+.footer .container .calling-us .card h5{
+    font-size: 18px;
+    color:var(--textHoverColor);
+    margin-bottom: 40px;
+    position: relative;
+    background-color: transparent;
+}
+
+
+.footer .container .about-company .card h5::after,
+.footer .container .calling-us .card h5::after
+{
+    content: "";
+    position: absolute;
+    background-color: #5C5C5C;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    right: 17px
+}
+.footer .container .about-company .card p,
+.footer .container .calling-us .card p
+{
+    padding-right:16px;
+}
+.footer .container .about-company .card .social-media{
+    padding-right:16px;
+    gap:5px;
+}
+.footer .container .about-company .card .social-media a{
+    background-color: #5C5C5C;
+    color:#ACACAC;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container .about-company .card .social-media a:hover{
+    color:var(--textColor);
+    background-color: var(--textHoverColor);
+}
+
+
+.footer .copy-right{
+   background-color: #111111;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+.footer .copy-right h2{
+    padding-top: 30px;
+   font-size: 15px;
+   color:#919191;
+   margin-bottom: 30px; 
+   
+}
+
+
+
+
+/* footer ends */
+
+
+
+
